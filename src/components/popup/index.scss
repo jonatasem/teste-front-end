@@ -1,0 +1,116 @@
+.container-popup {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .popup {
+    width: 769px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 6px;
+    position: relative;
+
+    .popup-head {
+      img {
+        width: 247px;
+      }
+    }
+
+    .popup-main {
+      h1 {
+        font-size: 20px;
+        font-weight: 400;
+        width: 328px;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        color: #3f3f40;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 10px 0;
+      }
+
+      h3 {
+        font-size: 10px;
+        color: #9f9f9f;
+        font-weight: 500;
+        margin: 5px 0;
+        width: 290px;
+      }
+
+      h4 {
+        font-size: 11px;
+        font-weight: 600;
+        color: #3442b5;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .container-quantidade {
+        display: flex;
+        justify-content: space-between;
+        width: 310px;
+        height: 36px;
+
+        .quantidade-left {
+          article {
+            width: 110px;
+            height: 36px;
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid #d9d9d9;
+            align-items: center;
+
+            button {
+              width: 11px;
+              color: #9f9f9f;
+              background-color: transparent;
+              border: transparent;
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        .btn-buy {
+          background-color: #f7ca11;
+          border-radius: 6px;
+          width: 188px;
+          height: 36px;
+          border: transparent;
+          font-size: 14px;
+          font-weight: 700;
+          color: #271c47;
+        }
+      }
+
+      .container-close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        background-color: transparent;
+        border: transparent;
+
+        .icon-close {
+          font-size: 30px;
+          color: #707070;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
