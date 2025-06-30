@@ -2,6 +2,8 @@
 
 Este é um projeto desenvolvido em React que exibe uma lista de produtos, permitindo que os usuários vejam detalhes de cada produto em um popup.
 
+![PrintScree](./src/assets/img/econverse.png)
+
 ## Tecnologias Utilizadas
 
 - **React**: Biblioteca JavaScript para construção de interfaces de usuário.
