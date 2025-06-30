@@ -8,7 +8,6 @@ Este é um projeto desenvolvido em React que exibe uma lista de produtos, permit
 - **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
 - **Vite**: Ferramenta de construção e desenvolvimento rápido.
 - **Sass**: Pré-processador CSS.
-- **Express**: Framework para Node.js, para lidar com o CORS.
 
 ## Instalação
 
@@ -16,36 +15,24 @@ Para executar o projeto localmente, siga os passos abaixo:
 
 1. Clone o repositório:
 
-   git clone https://github.com/jonatasem/proxy-teste-jr.git
-   cd proxy-teste-jr
+   git clone https://github.com/jonatasem/teste-front-end.git
+   cd teste-front-end
    
 2. Instale as dependências:
 
    npm install
    
-   ou
-
-   yarn install
-   
 3. Crie um arquivo `.env` na raiz do projeto e adicione a seguinte variável:
 
    API_URL=https://proxy-teste-jr.onrender.com/api/produtos
-   
-4. Inicie o servidor proxy:
 
-   node server.js
+   (Proxy criado com node, express para lidar com o cors)
 
-5. Crie um arquivo `.env` na raiz do projeto e adicione a seguinte variável:
+   código do proxy: https://github.com/jonatasem/proxy-teste-jr
 
-   API_URL=https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json
+4. Execute o projeto React:
 
-6. Execute o servidor proxy:
-
-   node server.js
-
-### Acesso ao Proxy
-
-Após iniciar o servidor proxy, você pode acessar os dados dos produtos em `http://localhost:5000/api/produtos`.
+   npm run dev
 
 # Teste Econverse: Vaga Desenvolvedor Front-End
 
