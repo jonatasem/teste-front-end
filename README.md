@@ -1,69 +1,80 @@
-# React + TypeScript + Vite
+# Teste Front-end jr
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto desenvolvido em React que exibe uma lista de produtos, permitindo que os usuários vejam detalhes de cada produto em um popup.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
+- **Vite**: Ferramenta de construção e desenvolvimento rápido.
+- **Sass**: Pré-processador CSS.
+- **Express**: Framework para Node.js, para lidar com o CORS.
 
-## Expanding the ESLint configuration
+## Instalação
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Para executar o projeto localmente, siga os passos abaixo:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. Clone o repositório:
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+   git clone https://github.com/jonatasem/proxy-teste-jr.git
+   cd proxy-teste-jr
+   
+2. Instale as dependências:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+   npm install
+   
+   ou
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+   yarn install
+   
+3. Crie um arquivo `.env` na raiz do projeto e adicione a seguinte variável:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+   API_URL=https://proxy-teste-jr.onrender.com/api/produtos
+   
+4. Inicie o servidor proxy:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+   node server.js
+
+5. Crie um arquivo `.env` na raiz do projeto e adicione a seguinte variável:
+
+   API_URL=https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json
+
+6. Execute o servidor proxy:
+
+   node server.js
+
+### Acesso ao Proxy
+
+Após iniciar o servidor proxy, você pode acessar os dados dos produtos em `http://localhost:5000/api/produtos`.
+
+# Teste Econverse: Vaga Desenvolvedor Front-End
+
+### Vem ser #Econverse!
+
+Segue abaixo as instruções para a execução do teste.
+
+## Instruções
+- Faça um fork desse projeto para a sua conta pessoal do GitHub.
+- Desenvolva a página conforme as **Especificações Técnicas** 
+- Crie um README com as instruções para compilar, testar e rodar o projeto.
+- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br, joao.victor@econverse.com.br e eduardo.rodrigues@econverse.com.br com o título **Teste Vaga FrontEnd Jr**
+
+## Especificações Técnicas
+- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
+- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
+- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
+- Utilizar Pré-processador Sass, Less ou Stylus.
+- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
+- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+
+## Pontos Extras
+- Utilizar Boas práticas de SEO
+- Uso de HTML semântico
+
+## O que avaliaremos em seu teste
+- Organização do projeto
+- Lógica do código
+- Componentização
+- Alcance dos objetivos propostos
+
+**Boa sorte! ;)**
