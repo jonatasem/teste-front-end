@@ -1,5 +1,5 @@
 import React from "react";
-import type { Product } from "../../interfaces/Product";
+import type { Product } from "../../../interfaces/Product";
 import "./index.scss";
 
 import { IoIosArrowForward } from "react-icons/io";
